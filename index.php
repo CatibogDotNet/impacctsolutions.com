@@ -5,7 +5,7 @@
 	
 	<div class="clear"></div>
 	<hr />
-	<div id="title">Chartered Professional Accountant Ready to Serve You</div><br /><br />
+	<div id="title">Chartered Professional Accountant Ready to serve You</div><br /><br />
 	<hr />
 	<div>	
 		<p>We are motivated to assist small businesses in the Greater Toronto Area to become more efficient in terms of their accounting activities and reduce costs in the process.</p>
