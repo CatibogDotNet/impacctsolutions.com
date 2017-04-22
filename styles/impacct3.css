@@ -1,0 +1,114 @@
+<---- Default styles begin ---->
+html {height: 100%; width: 100%;}
+body {
+	width: 100%; height: 100%;
+	margin: 0; padding: 0; border: 0;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+<---- Default styles end ---->
+<---- Logo section begins ---->
+div.#header #logo {
+	width: 100px;
+  height:100px;
+}
+
+<---- Header section begins ------>
+div.#header banner_area {
+	background-color: yellow;
+	max-width: 91%;
+	height:100px;
+}
+
+ul.subjects {
+	margin: 1em 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+ul.pages {
+	padding-left: 2em;
+	list-style: square;
+	font-weight: normal;
+}
+.selected{
+	font-weight: bold;
+}
+
+li {
+	font-size:11px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+<---- Header section ends ------>
+
+<---- Main section begins ------>
+#main {
+	width: 100%;
+	height: 70%;
+	border: 3px double black;
+
+}
+
+#navmenu {
+	width: 200px;
+	border: none;
+	background-color: yellow;
+}
+#navmenu ul {
+	height: auto;
+    margin: 0px;
+}
+#navmenu li {
+	font-size: 1.2em;
+	padding: 0px;
+}
+#navmenu a {
+    text-decoration: none;
+    color: #00F;
+    padding: 8px 8px 8px 8px;
+}
+#navmenu a:hover {
+    color: #1A446C;
+}
+
+#page_area {
+	position: absolute;
+	left: 201px; top: 101px;
+  background-image:url("../images/wil.png");
+	background-repeat: no-repeat;
+	border: none;
+}
+
+#page_area h2 {
+	text-align: left;
+}
+
+#page_area ul {
+	height: auto;
+  margin: 0px;
+}
+#page_area li {
+	font-size: 1.2em;
+	padding: 0px;
+}
+#page_area a {
+    text-decoration: none;
+    color: #00F;
+    padding: 8px 8px 8px 8px;
+}
+#page_area a:hover {
+    color: #F90;
+}
+
+<---- Main section ends ------>
+
+<---- Footer section begins ------>
+div.footer {
+  width:100%;
+	height: 10%;
+  font-size:6px;
+	text-align: right;
+}
+<---- Footer section ends ------>

@@ -1,0 +1,249 @@
+html {height: 100%; width: 100%;}
+body {
+	width: 100%; height: 100%;
+	margin: 0; padding: 0; border: 0;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+#nav{
+    list-style: none;/*cancel any previous list styles*/
+	font-weight:bold;
+    margin-bottom: 10px;
+    float: left; /* Clear floats */
+    width: 100%;
+    /* Bring the nav above everything else--uncomment if needed. */
+    position: relative;
+    z-index: 5;
+}
+
+#nav li{
+	list-style-type: none;
+    float:left;
+    margin-right:12px;
+    position:relative;
+}
+#nav a{
+    display:block;
+    padding:1px;
+    color:#000;
+    background:#ffffff;
+    text-decoration:none;
+}
+#nav a:hover{
+    /*color:#000;
+    background:#fff;*/
+    text-decoration:underline;
+}
+/*--- DROPDOWN ---*/
+#nav ul{
+    background:#ffffff; /* Adding a background makes the dropdown work
+    properly in IE7+. Make this as close to your page's background
+    as possible (i.e. white page == white background).
+    background:rgba(255,255,255,0); /* But! Let's make the background
+    fully transparent where we can, we don't actually want to see it
+    if we can help it... */
+    list-style:none;
+    position:absolute;
+    display:none;
+    /* left:-9999px; /* Hide off-screen when not needed (this is more
+      accessible than display:none;) */
+}
+	#nav ul li{
+    padding-top:1px; /* Introducing a padding between the li and the
+    a give the illusion spaced items */
+    float:none;
+}
+
+#nav ul li ul{
+	list-style:none;
+	padding-top:1px; /* Introducing a padding between the li and the
+	a give the illusion spaced items */
+	display:none;
+}
+
+#nav ul a{
+    white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+#nav li:hover ul{ /* Display the dropdown on hover */
+    display: list-item;
+    left:0; /* Bring back on-screen when needed */
+}
+#nav li:hover a{ /* These create persistent hover states, meaning the <ul>
+              <li><a href="#">The product</a></li>
+
+              <li><a href="#">Meet the team</a></li>
+          </ul>top-most link stays 'hovered' even when your cursor has moved down the list. */
+    background:#ffffff;
+    text-decoration:underline;
+}
+#nav li:hover ul a{ /* The persistent hover state does however create a global style for
+  links even before they're hovered. Here we undo these effects. */
+    text-decoration:none;
+}
+#nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens
+  when you hover each individual link. */
+    background:#ffffff;
+    color: #ff8080;
+}
+
+
+/*<---- Header section begins ---->*/
+#header {
+	float: left;
+	background-color: #6b0c36;
+	width: 100%;
+}
+
+#banner_area {
+	float: left;
+	height: 6em;
+	width: 100%;
+	padding-right: 2em;
+	padding-left: 2em;
+	background-color: #D4E6F4;
+}
+#banner_area img {
+	width: 6em;
+	height: 6em;
+	padding-left: 2em;
+	float: left;
+}
+
+#banner_area h1 {
+	font-size: 24px;
+	text-align: center;
+}
+
+#banner_area h2 {
+	font-size: 12px;
+	text-align: center;
+}
+
+#banner_area p {
+	font-size: 0.5em;
+	text-align: center;
+	padding-right: 2em;
+}
+
+/*<---- Header section ends ---->*/
+
+/*<---- Main section begins ---->*/
+#main {
+	float: left;
+	width: 100%;
+}
+
+#navigation {
+	float: left;
+	width: 10%; height: 100%;
+	margin: 0; padding: 0 2em;
+	color: #000000; background: #D4E6F4;
+	border: none;
+}
+
+#navigation h2 {
+	font-size: 16px;
+	text-align: center;
+}
+
+#navigation ul {
+	height: auto;
+  margin: 0px;
+	list-style: none;
+	text-align:justify;
+}
+
+#navigation ul.subjects {
+	margin: 1em 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+#navigation ul.pages {
+	padding-left: 2em;
+	list-style: none;
+	font-weight: normal;
+}
+.selected{
+	font-weight: bold;
+	font-style: italic;
+}
+
+#navigation li {
+	font-size: 12px;
+	padding: 0px;
+	text-align: left;
+	list-style: none;
+}
+
+#navigation a {
+	text-decoration: none;
+	color: #000000;
+	text-align: left;
+	font-size: 10px;
+}
+
+#navigation a:hover {
+	color: #FF0000;
+}
+
+
+#page_area {
+	float: left;
+	width: 84%;
+	border: none;
+}
+
+#page_area h2 {
+	text-align: left;
+	font-size: 16px;
+}
+
+#page_area ul {
+	height: auto;
+	margin: 0px;
+	list-style: none;
+}
+#page_area li {
+	font-size: 1.0em;
+	padding: 0px;
+}
+#page_area a {
+    text-decoration: none;
+    color: #00F;
+}
+
+#page_area a:hover {
+    color: #F90;
+}
+
+#page_area p {
+	font-size: 10px;
+}
+
+#footer {
+	width: 200px;
+}
+
+#footer p {
+	font-size: 10px;
+	text-align: left;
+}
+
+div.message {
+	border: 2px solid #8D0D19;
+	color: #8D0D19; font-weight: bold;
+	margin: 1em 0; padding: 1em;
+}
+table {
+    border: 1px solid black;
+}
+
+th, td {
+    height: 20px;
+    vertical-align: bottom;
+	horizontal-align: center;
+	font-family: Arial; 
+	font-size: 10pt;
+}
+tr:nth-child(even){background-color: #f2f2f2;}
